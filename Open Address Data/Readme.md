@@ -2,7 +2,7 @@
 
 ### Summary  
 
-This is one of the planimetric coverages developed as part of the aerial survey project of 1996 and updated using new aerial photography collected between 25 March 2004 and 23 April 2004.  
+This data is every standardized address and related coordinates.
   
 Features updated:    05/16/2014  
 Attributes updated:  05/16/2014  
@@ -11,7 +11,6 @@ Update frequency:   As Needed
 
 ### Description  
 
-This data is every standardized address and related coordinates.
 
 DATA DEVELOPMENT: This data is created from the City of Philadelphia's Unified Land Record System (ULRS).  The PARCEL_ADDRESS table in the ULRS system contains a row of every standardized address in the system that is linked to a parcel. Each row also contains coordinates in NAD_1983_StatePlane_Pennsylvania_South_FIPS_3702_Feet (2272). The uploaded data is exported after a running a SQL query against the layer to kae sure none of the following felds are NULL; street_number, street)name, street_type, x_coord, and y_coord.
 
