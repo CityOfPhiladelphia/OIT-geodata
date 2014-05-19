@@ -6,7 +6,7 @@ This is one of the planimetric coverages developed as part of the aerial survey 
   
 Features updated:    05/16/2014  
 Attributes updated:  05/16/2014  
-Metadata updated:  05/18/2014 
+Metadata updated:  05/18/2014
 Update frequency:   As Needed
 
 ### Description  
