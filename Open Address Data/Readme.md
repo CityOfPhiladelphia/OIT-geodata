@@ -14,7 +14,7 @@ Update frequency:   As Needed
 
 DATA DEVELOPMENT: This data is created from the ULRS PARCEL_ADDRESS table that contains a row of every standardized address in the system and is linked to a parcel. Each row also contains coordinates in NAD_1983_StatePlane_Pennsylvania_South_FIPS_3702_Feet (2272). The uploaded data is exported from the table after a running a SQL query against the layer to make sure none of the following fields are NULL; street_number, street_name, street_type, x_coord, and y_coord.
 
-This exported csv is loaded into ArcMap and then exported using the City of Philadelphia's Arc2Open toolbox which exports a shapefile, csv, and geojson file of the data in WGS 84.
+This exported csv is loaded into ArcMap and then exported using the City of Philadelphia's (https://github.com/CityOfPhiladelphia/arc-open/ "arc-open") toolbox which exports a shapefile, csv, and geojson file of the data in WGS 84.
 
 
 COORDINATE SYSTEM: GCS_WGS_1984, WKID: 4326, Decimal Degrees.
