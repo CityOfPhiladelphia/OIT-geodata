@@ -7,7 +7,7 @@ This data is every standardized address and related coordinates contained in the
 Features updated:    05/16/2014  
 Attributes updated:  05/16/2014  
 Metadata updated:  05/18/2014  
-Update frequency:   As Needed
+Update frequency:   This process will be scripted to update the data automatically every week on schedule with the ULRS.
 
 ### Description  
 
