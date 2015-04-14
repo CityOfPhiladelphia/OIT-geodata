@@ -30,8 +30,9 @@ THEMATIC MAPPING: Use the LAT and LON fields for thematic mapping and the NUMBER
 
 | Field | Description  
 | ----- | :----------:    
-| NUMBER | The Street Number
-| STREET | A concatenation of the Street_Name and Street_Type fields
+| NUMBER | The Street Number and Street Number Suffix (i.e. R for Rear)
+| STREET | A concatenation of the Street Prefix, Street Name, Street Type, and Street Suffix  fields
+| UNIT | The unit field is for condos or other addresses that have a unit
 | LAT | The Latitude coordinate of the address
 | LON | The Longitude coordinate of the address
 
