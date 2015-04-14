@@ -14,6 +14,11 @@ Update frequency:   This process will be scripted to update the data automatical
 
 DATA DEVELOPMENT: This data is created from the ULRS PARCEL_ADDRESS table that contains a row of every standardized address in the system and is linked to a parcel. Each row also contains coordinates in NAD_1983_StatePlane_Pennsylvania_South_FIPS_3702_Feet (2272). The uploaded data is exported from the table after a running a SQL query against the layer to make sure none of the following fields are NULL; street_number, street_name, street_type, x_coord, and y_coord.
 
+```sql
+select DISTINCT (to_char(street_number) || NVL2(to_char(street_number_suffix),' ' || to_char(street_number_suffix), '')) "NUMBER", (NVL2(street_prefix,street_prefix || ' ','') || street_name || ' ' || street_type || NVL2(street_suffix,' ' || street_suffix, '')) STREET, to_char(UNIT), x_coord LON, y_coord LAT from parcel_address
+where x_coord is not null and y_coord is not null and street_number is not null and street_name is not null and street_type is not null
+```
+
 This exported csv is loaded into ArcMap and then exported using the City of Philadelphia's [arc-open](https://github.com/CityOfPhiladelphia/arc-open/) toolbox which exports a shapefile, csv, and geojson file of the data in WGS 84.
 
 
