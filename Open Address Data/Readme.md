@@ -4,8 +4,8 @@
 
 This data is every standardized address and related coordinates contained in the City of Philadelphia's Unified Land Record System (ULRS).
   
-Features updated:    04/14/2015  
-Attributes updated:  04/14/2015  
+Features updated:    10/09/2015  
+Attributes updated:  10/09/2015  
 Metadata updated:  05/18/2014  
 Update frequency:   This process will be scripted to update the data automatically every week on schedule with the ULRS.
 
